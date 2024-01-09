@@ -10,11 +10,11 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="registration" element={<Registration />}>
-            <Route path="login" element={<Login />} />
-            <Route path="forgetpassword" element={<Forgetpasswrod />} />
-            <Route path="adduser" element={<Adduser />} />
-          </Route>
+          <Route path="registration" element={<Registration />} />
+          <Route path="login" element={<Login />} />
+          <Route path="forgetpassword" element={<Forgetpasswrod />} />
+          <Route path="adduser" element={<Adduser />} />
+
         </Routes>
       </BrowserRouter>
     </>
