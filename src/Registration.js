@@ -1,7 +1,10 @@
 import React from 'react'
 import '../src/css/Registration.css'
-import img1 from './pexels-lisa-fotios-1957478.jpg'
+import img1 from './images/pexels-lisa-fotios-1957478.jpg'
 import { Form } from 'react-router-dom'
+import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import googleImage from './images/google.png';
+
 
 
 
@@ -54,9 +57,16 @@ export default function Registration() {
               <div class="login100-form-social flex-c-m">
                 <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
                   <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                  <FaFacebook />
                 </a>
                 <a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
                   <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <FaWhatsapp />
+                </a>
+                <a href="#" class="login100-form-social-item flex-c-m bg22 m-r-5">
+                  <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                  {/* <FaGoogle /> */}
+                  <img src={googleImage} alt="Google" className="go-1" />
                 </a>
               </div>
             </form>

@@ -9915,7 +9915,15 @@ iframe {
 }
 
 .bg2 {
-    background: #1da1f2
+    background: green
+}
+
+.bg22 {
+    background: #dfd7d7
+}
+
+.go-1 {
+    width: 26px;
 }
 
 .bg3 {
@@ -10290,12 +10298,12 @@ input.input100 {
 .login100-form-social-item {
     width: 36px;
     height: 36px;
-    font-size: 18px;
+    font-size: 26px;
     color: #fff;
     border-radius: 50%
 }
 
 .login100-form-social-item:hover {
     background: #333;
-    color: #fff
+    color: #fff;
 }
