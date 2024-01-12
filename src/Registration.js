@@ -131,13 +131,6 @@ export default function Registration() {
               </div>
 
 
-              <div class="flex-sb-m w-full p-t-3 p-b-32">
-                <div>
-                  <a href="#" class="txt1">
-                    Forgot Password?
-                  </a>
-                </div>
-              </div>
               <div class="container-login100-form-btn">
                 <button class="login100-form-btn">
                   Submit
