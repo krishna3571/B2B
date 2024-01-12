@@ -4,6 +4,7 @@ import img1 from './images/pexels-lisa-fotios-1957478.jpg'
 import { Form } from 'react-router-dom'
 import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import googleImage from './images/google.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -19,34 +20,120 @@ export default function Registration() {
             </div>
             <form class="validate-form login100-form1 " >
               <span class="login100-form-title p-b-43">
-                Login to continue
+                SIGN IN
               </span>
-              <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                <input class="input100" type="text" name="email" />
-                <span class="focus-input100"></span>
-                <span class="label-input100">Email</span>
-              </div>
-              <div class="wrap-input100 validate-input" data-validate="Password is required">
-                <input class="input100" type="password" name="pass" />
-                <span class="focus-input100"></span>
-                <span class="label-input100">Password</span>
-              </div>
-              <div class="flex-sb-m w-full p-t-3 p-b-32">
-                <div class="contact100-form-checkbox">
-                  <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me" />
-                  <label class="label-checkbox100" for="ckb1">
-                    Remember me
-                  </label>
+
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="wrap-input100 validate-input" data-validate="First Name is required">
+                    <input className="input100" type="text" placeholder="First Name" name="fname" />
+                    <span className="focus-input100"></span>
+                  </div>
                 </div>
-                <div>
-                  <a href="#" class="txt1">
-                    Forgot Password?
-                  </a>
+
+                <div className="col-md-6">
+                  <div className="wrap-input100 validate-input" data-validate="Last Name is required">
+                    <input className="input100" type="text" placeholder="Last Name" name="lname" />
+                    <span className="focus-input100"></span>
+                  </div>
                 </div>
               </div>
+
+              <div className="row">
+                <div className="col-md-6">
+                  <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="input100" type="text" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                      name="email" placeholder='Email' />
+                    <span class="focus-input100"></span>
+                  </div>
+                </div>
+
+                <div className="col-md-6">
+                  <div class="wrap-input100 validate-input" data-validate="Valid phone number is required">
+                    <input class="input100" type="tel" pattern="^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$"
+                      maxLength="10" placeholder='Phone Number' name="phone" />
+                    <span class="focus-input100"></span>
+                  </div>
+                </div >
+              </div >
+
+
+              <div class="wrap-input100 validate-input" data-validate="Company name is required">
+                <input class="input100" type="text" placeholder='Company name' name="Company" />
+                <span class="focus-input100"></span>
+              </div>
+
+              <div class="wrap-input100 validate-input" data-validate="Address is required">
+                <input class="input100" type="text" placeholder='Address' name="address" />
+                <span class="focus-input100"></span>
+              </div>
+
+              <div className="row">
+                <div className="col-md-6">
+                  <div class="wrap-input100 validate-input" data-validate="Pincode is required">
+                    <input
+                      class="input100"
+                      type="tel"
+                      placeholder='Pincode'
+                      name="pincode"
+                      pattern="[0-9]{6}"  // Allow only numbers and enforce a 6-digit pincode
+                      maxLength="6"       // Set maximum length to 6
+                      title="Pincode must be a 6-digit number"
+                    />
+                    <span class="focus-input100"></span>
+                  </div>
+                </div>
+
+                <div className="col-md-6">
+                  <div class="wrap-input100 validate-input" data-validate="City is required">
+                    <input class="input100" type="text" placeholder='City' name="City" />
+                    <span class="focus-input100"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-6">
+                  <div class="wrap-input100 validate-input" data-validate="State is required">
+                    <input class="input100" type="text" placeholder='State' name="State" />
+                    <span class="focus-input100"></span>
+                  </div>
+                </div>
+
+                <div className="col-md-6">
+                  <div class="wrap-input100 validate-input" data-validate="Country is required">
+                    <select class="input100" name="country">
+                      <option value="India" selected>India</option>
+                      <option value="USA">USA</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Germany">Germany</option>
+                      {/* Add more countries as needed */}
+                    </select>
+                    <span class="focus-input100"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-6">
+                  <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <input class="input100" type="password" placeholder='Password' name="password" />
+                    <span class="focus-input100"></span>
+                  </div>
+                </div>
+
+                <div className="col-md-6">
+                  <div class="wrap-input100 validate-input" data-validate="Confirm Password is required">
+                    <input class="input100" type="password" placeholder='Confirm Password' name="confirmPassword" />
+                    <span class="focus-input100"></span>
+                  </div>
+                </div>
+              </div>
+
+
               <div class="container-login100-form-btn">
                 <button class="login100-form-btn">
-                  Login
+                  Submit
                 </button>
               </div>
               <div class="text-center p-t-46 p-b-20">
