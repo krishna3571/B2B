@@ -4,6 +4,7 @@ import Registration from './Registration';
 import Login from './Login';
 import Forgetpasswrod from './Forgetpasswrod';
 import Adduser from './Adduser';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (
