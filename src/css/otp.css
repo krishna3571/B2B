@@ -1,0 +1,100 @@
+.otp-field {
+    flex-direction: row;
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.otp-field input {
+    height: 55px;
+    width: 50px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.otp-field input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.otp-field input::-webkit-inner-spin-button,
+.otp-field input::-webkit-outer-spin-button {
+    display: none;
+}
+
+.resend {
+    font-size: 25px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: black;
+    font-size: 12px;
+    text-align: right;
+    font-family: monospace;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.p-5 {
+    padding: 0rem !important;
+}
+
+.mb-4 {
+    margin-bottom: -1.5rem !important;
+    margin-top: 3.5rem !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+    margin-top: 2.5rem;
+}
+
+p {
+    font-family: Poppins-Regular;
+    font-size: 24px;
+    line-height: 0.7;
+    color: #666;
+    margin: 0;
+}
+
+@media screen and (max-width:575px) {
+    p {
+        font-family: Poppins-Regular;
+        font-size: 20px;
+        line-height: 0.7;
+        color: #666;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:503px) {
+    .otp-field input {
+        height: 45px;
+        width: 40px;
+        border-radius: 6px;
+        outline: none;
+        font-size: 1.125rem;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    .resend {
+        font-size: 20px;
+    }
+    p {
+        font-family: Poppins-Regular;
+        font-size: 15px;
+        line-height: 0.7;
+        color: #666;
+        margin: 0;
+    }
+}
