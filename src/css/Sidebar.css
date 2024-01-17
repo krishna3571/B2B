@@ -84,6 +84,8 @@ nav.open .sidebar {
 
 .lists .nav-link:hover {
     background-color: #4070f4;
+    border-radius: 10px;
+    padding-left: 10px;
 }
 
 .nav-link .icon {
@@ -123,4 +125,12 @@ nav.open~.overlay {
 
 .anchor3 {
     text-decoration: none;
+}
+
+.boderr {
+    border-radius: 10px;
+}
+
+.logout {
+    margin-left: 10px;
 }
