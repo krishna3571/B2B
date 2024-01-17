@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './css/forgetpassword.css'
 import './css/otp.css'
-import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import OtpInput from 'react-otp-input';
 
 export default function Forgetpasswrod() {
@@ -13,14 +13,19 @@ export default function Forgetpasswrod() {
   const otpverify = () => {
     setForr("confrom")
   }
+  const [passwordVisible, setPasswordVisible] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
 
   return (
     <>
 
       {forr == "for" && <div className='main'>
         <div className='box_ps'>
-          <form className="login100-form validate-form">
-            <span className="login100-form-title p-b-43">
+          <form className="login100-form_011 validate-form">
+            <span className="login100-form-title_034 p-b-43">
               FORGETPASSWORD
             </span>
             <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
@@ -73,21 +78,38 @@ export default function Forgetpasswrod() {
 
         <div className='main'>
           <div className='box_ps'>
-            <form className="login100-form validate-form">
-              <span className="login100-form-title p-b-43">
+            <form className="login100-form_011 validate-form">
+              <span className="login100-form-title_034 p-b-43">
                 changepassword
               </span>
               <div className="wrap-input100 validate-input" data-validate="Password is required">
-                <input className="input100" type="password" placeholder='new password' name="pass" />
+                <input
+                  className="input100"
+                  type={passwordVisible ? 'text' : 'password'}
+                  placeholder='new password'
+                  name="pass"
+                />
                 <span className="focus-input100"></span>
               </div>
               <div className="wrap-input100 validate-input" data-validate="Password is required">
-                <input className="input100" type="password" placeholder='confrom Password' name="pass" />
+                <input
+                  className="input100"
+                  type={passwordVisible ? 'text' : 'password'}
+                  placeholder='conform Password'
+                  name="pass"
+                />
+                <span className="focus-input100"></span>
+                <button
 
+                  type='button'
+                  onClick={togglePasswordVisibility}
+                >
+                  {passwordVisible ? <FaEyeSlash className='eye_setting_input' /> : <FaEye className='eye_setting_input' />}
+                </button>
                 <span className="focus-input100"></span>
               </div>
               <div className="container-login100-form-btn">
-                <button className="login100-form-btn_confrom" >
+                <button className="login100-form-btn_confrom">
                   changepassword
                 </button>
               </div>

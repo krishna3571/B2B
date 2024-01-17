@@ -165,6 +165,17 @@ p {
     }
 }
 
+
+.login100-form-title_034 {
+    width: 100%;
+    display: block;
+    font-family: Poppins-Regular;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+}
+
 @media screen and (max-width:430px) {
     .otp-field input {
         height: 35px;
@@ -247,6 +258,8 @@ p {
 }
 
 @media screen and (max-width:380px) {
+
+
     .login100-form-btn_confrom {
         display: flex;
         justify-content: center;
@@ -264,6 +277,16 @@ p {
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: all .4s;
+    }
+
+    .login100-form-title_034 {
+        width: 100%;
+        display: block;
+        font-family: Poppins-Regular;
+        font-size: 20px;
+        color: #333;
+        line-height: 1.2;
+        text-align: center;
     }
 }
 
@@ -287,4 +310,57 @@ p {
         letter-spacing: 1px;
         transition: all .4s;
     }
+}
+
+.login100-form_011 {
+    width: 100%;
+    min-height: 78vh;
+    display: block;
+    background-color: #f7f7f7;
+    padding: 173px 55px 55px;
+    border-radius: 15px;
+}
+
+
+
+
+@media screen and (max-width:460px) {
+    .login100-form-title_034 {
+        width: 100%;
+        display: block;
+        font-family: Poppins-Regular;
+        font-size: 25px;
+        color: #333;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:381px) {
+    .login100-form-title_034 {
+        width: 100%;
+        display: block;
+        font-family: Poppins-Regular;
+        font-size: 20px;
+        color: #333;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .login100-form-title_034 {
+        width: 100%;
+        display: block;
+        font-family: Poppins-Regular;
+        font-size: 18px;
+        color: #333;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+.eye_setting_input{
+    margin-top: -15vh;
+    margin-left: 58vh;
 }
