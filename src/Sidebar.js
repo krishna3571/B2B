@@ -39,12 +39,12 @@ const YourComponent = () => {
                                 <i className="bx bx-cog icon">
                                     {isNavbarOpen ? <FaUser /> : <FaUser />}
                                 </i>
-                                <span className="link">EADD USER</span>
+                                <span className="link">ADD USER</span>
                             </a>
 
                             <a href="#" className="nav-link">
                                 <i className="bx bx-cog icon">
-                                    <Link  to="/profile">
+                                    <Link to="/profile">
                                         {isNavbarOpen ? <FaUser /> : <FaUser />}
                                     </Link>
                                 </i>

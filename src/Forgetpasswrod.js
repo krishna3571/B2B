@@ -10,6 +10,9 @@ export default function Forgetpasswrod() {
   const forget = () => {
     setForr("otp")
   }
+  const otpverify = () => {
+    setForr("confrom")
+  }
 
   return (
     <>
@@ -25,7 +28,7 @@ export default function Forgetpasswrod() {
               <span className="focus-input100"></span>
             </div>
             <div className="container-login100-form-btn">
-              <button className="login100-form-btn" onClick={forget}>
+              <button className="login100-form-btn_confrom" onClick={forget}>
                 forgetpassword
               </button>
             </div>
@@ -35,8 +38,8 @@ export default function Forgetpasswrod() {
 
       {forr == "otp" && <div className='main'>
         <div className='box_ps'>
-          <form className="login100-form validate-form">
-            <span className="login100-form-title p-b-43">
+          <form className="login100-form_1 validate-form">
+            <span className="login100-form-title_01">
               OTP
             </span>
             <div class="card-body p-5 text-center">
@@ -54,8 +57,8 @@ export default function Forgetpasswrod() {
 
 
               <div className="container-login100-form-btn">
-                <button className="login100-form-btn">
-                  submit
+                <button className="login100-form-btn_01" onClick={otpverify}>
+                  VERIFY
                 </button>
               </div>
               <p class="resend text-muted mb-0">
@@ -66,7 +69,33 @@ export default function Forgetpasswrod() {
           </form>
         </div>
       </div>}
+      {forr == "confrom" &&
 
+        <div className='main'>
+          <div className='box_ps'>
+            <form className="login100-form validate-form">
+              <span className="login100-form-title p-b-43">
+                changepassword
+              </span>
+              <div className="wrap-input100 validate-input" data-validate="Password is required">
+                <input className="input100" type="password" placeholder='new password' name="pass" />
+                <span className="focus-input100"></span>
+              </div>
+              <div className="wrap-input100 validate-input" data-validate="Password is required">
+                <input className="input100" type="password" placeholder='confrom Password' name="pass" />
+
+                <span className="focus-input100"></span>
+              </div>
+              <div className="container-login100-form-btn">
+                <button className="login100-form-btn_confrom" >
+                  changepassword
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      }
 
 
     </>
