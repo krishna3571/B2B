@@ -5,7 +5,8 @@ import Login from './Login';
 import Forgetpasswrod from './Forgetpasswrod';
 import Adduser from './Adduser';
 import Sidebar from './Sidebar';
-
+import Catalog from './catalog';
+ 
 export default function App() {
   return (
     <>
@@ -16,6 +17,8 @@ export default function App() {
           <Route path="forgetpassword" element={<Forgetpasswrod />} />
           <Route path="adduser" element={<Adduser />} />
           <Route path="s" element={<Sidebar />} />
+          <Route path="catalog" element={<Catalog />} />
+
 
         </Routes>
       </BrowserRouter>

@@ -9,7 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 
 const YourComponent = () => {
-        const  [isNavbarOpen,setNavbarOpen] = useState(false);
+        const [isNavbarOpen, setNavbarOpen] = useState(false);
 
         const toggleNavbar = () => {
                 setNavbarOpen(!isNavbarOpen);
@@ -44,7 +44,7 @@ const YourComponent = () => {
                                                                 </i>
                                                                 <span className="link">Add User</span>
                                                         </a>
-                                                        <a href="#" className="nav-link boderr">
+                                                        <a href="catalog" className="nav-link boderr">
                                                                 <i className="bx bx-cog icon">
                                                                         {isNavbarOpen ? <MdLibraryBooks />
                                                                                 : <MdLibraryBooks />
