@@ -360,7 +360,14 @@ p {
     }
 }
 
-.eye_setting_input{
+.eye_setting_input {
     margin-top: -15vh;
-    margin-left: 58vh;
+    margin-left: 85vh;
+}
+
+@media screen and (max-width:1116px) {
+    .eye_setting_input {
+        margin-top: -15vh;
+        margin-left: 65vh;
+    }
 }
