@@ -52,7 +52,9 @@ export default function Forgetpasswrod() {
               <p>Your code was sent to you via email</p>
 
               <div class="otp-field mb-4">
+
                 <input type="number" />
+                <span className="focus-input100"></span>
                 <input type="number" />
                 <input type="number" />
                 <input type="number" />
@@ -91,21 +93,13 @@ export default function Forgetpasswrod() {
                 />
                 <span className="focus-input100"></span>
               </div>
-              <div className="wrap-input100 validate-input" data-validate="Password is required">
+              <div className="wrap-input100 validate-input" style={{ position: 'relative' }} data-validate="Password is required">
                 <input
                   className="input100"
                   type={passwordVisible ? 'text' : 'password'}
                   placeholder='conform Password'
                   name="pass"
                 />
-                <span className="focus-input100"></span>
-                <button
-
-                  type='button'
-                  onClick={togglePasswordVisibility}
-                >
-                  {passwordVisible ? <FaEyeSlash className='eye_setting_input' /> : <FaEye className='eye_setting_input' />}
-                </button>
                 <span className="focus-input100"></span>
               </div>
               <div className="container-login100-form-btn">
@@ -116,10 +110,7 @@ export default function Forgetpasswrod() {
             </form>
           </div>
         </div>
-
       }
-
-
     </>
   )
 }
