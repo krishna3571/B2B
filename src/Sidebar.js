@@ -38,7 +38,7 @@ const YourComponent = () => {
 
                                         <div className="sidebar-content">
                                                 <ul className="lists">
-                                                        <a href="#" className="nav-link boderr" >
+                                                        <a href="Adduser" className="nav-link boderr" >
                                                                 <i className="bx bx-cog icon">
                                                                         {isNavbarOpen ? <FaUser /> : <FaUser />}
                                                                 </i>

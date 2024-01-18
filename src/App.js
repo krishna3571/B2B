@@ -7,6 +7,8 @@ import Adduser from './Adduser';
 import Sidebar from './Sidebar';
 import Catalog from './catalog';
  
+import Dashboard from './Dashbord';
+
 export default function App() {
   return (
     <>
@@ -19,6 +21,7 @@ export default function App() {
           <Route path="s" element={<Sidebar />} />
           <Route path="catalog" element={<Catalog />} />
 
+          <Route path="d" element={<Dashboard />} />
 
         </Routes>
       </BrowserRouter>
