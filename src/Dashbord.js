@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Chart from "react-apexcharts";
+import UserLayout from "./Layout";
+import '../src/css/dashbord.css';
 
 const Dashboard = () => {
     const [chartData, setChartData] = useState({
@@ -20,18 +22,23 @@ const Dashboard = () => {
     });
 
     return (
-        <div className="app">
-            <div className="row">
-                <div className="mixed-chart">
-                    <Chart
-                        options={chartData.options}
-                        series={chartData.series}
-                        type="bar"
-                        width="500"
-                    />
+        <>
+            <UserLayout />
+            <div className='container layber'>
+                <div className="app">
+                    <div className="row">
+                        <div className="mixed-chart">
+                            <Chart
+                                options={chartData.options}
+                                series={chartData.series}
+                                type="bar"
+                                width="500"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
