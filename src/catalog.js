@@ -1,13 +1,16 @@
-import UserLayout from './Layout'
+import UserLayout from './Layout';
 import '../src/css/catalog.css';
 import React, { useEffect } from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
-export default function catalog() {
-
+export default function Catalog() {
     const handleReady = (editor) => {
-        // You can store the "editor" and use when it is needed.
+        // Add your custom CSS class to the CKEditor element
+        const editorElement = editor.ui.view.editable.element;
+        editorElement.classList.add('ckbox');
+
+        // You can store the "editor" and use it when needed.
         console.log('Editor is ready to use!', editor);
     };
 
@@ -23,12 +26,9 @@ export default function catalog() {
         console.log('Focus.', editor);
     };
 
-    // Cleanup function (optional) to remove event listeners or do other cleanup.
-
     return (
         <>
             <UserLayout />
-
             <div className='container layber'>
                 <div className="App">
                     <CKEditor
@@ -42,5 +42,5 @@ export default function catalog() {
                 </div>
             </div>
         </>
-    )
+    );
 }
