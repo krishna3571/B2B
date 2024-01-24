@@ -1,4 +1,5 @@
 .layber {
+<<<<<<< HEAD
     margin-top: 100px;
 }
 
@@ -7,3 +8,8 @@
     width: 50%;
     border: 5px dotted chocolate;
 }
+=======
+    position: relative;
+    top: 100px;
+}
+>>>>>>> c40f2577058f50c124da497a6be74770ab8ed661

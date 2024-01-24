@@ -60,7 +60,7 @@ const YourComponent = () => {
                                                                 </i>
                                                                 <span className="link"> Order</span>
                                                         </a>
-                                                        <a href="#" className="nav-link boderr">
+                                                        <a href="Dashbord" className="nav-link boderr">
                                                                 <i className="bx bx-cog icon">
                                                                         {isNavbarOpen ? <IoBarChartSharp />
                                                                                 : <IoBarChartSharp />
